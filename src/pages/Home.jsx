@@ -4,6 +4,7 @@ import Features from '../components/Features'
 import Funcionamento from '../components/Funcionamento'
 import PublicoAlvo from '../components/PublicoAlvo'
 import Galeria from '../components/Galeria'
+import Equipe from '../components/Equipe'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Funcionamento />
         <PublicoAlvo />
         <Galeria />
+        <Equipe />
       </main>
     </>
   )
