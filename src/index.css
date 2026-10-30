@@ -9,3 +9,18 @@ body {
   color: #1a1a2e;
   overflow-x: hidden;
 }
+
+@theme {
+  --animate-fade-up: fade-up 0.7s ease both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
