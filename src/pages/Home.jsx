@@ -5,6 +5,8 @@ import Funcionamento from '../components/Funcionamento'
 import PublicoAlvo from '../components/PublicoAlvo'
 import Galeria from '../components/Galeria'
 import Equipe from '../components/Equipe'
+import Contato from '../components/Contato'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
         <PublicoAlvo />
         <Galeria />
         <Equipe />
+        <Contato />
       </main>
+      <Footer />
     </>
   )
 }
