@@ -1,14 +1,13 @@
-function SectionTitle({ titulo, subtitulo }) {
+function FeatureCard({ icone, titulo, descricao }) {
   return (
-    <>
-      <h2 className="mb-2 text-center text-2xl font-extrabold text-[#1a1a2e] sm:text-[2rem]">
-        {titulo}
-      </h2>
-      <p className="mb-10 text-center text-[0.85rem] text-[#6b7280] sm:mb-[60px] sm:text-[0.95rem]">
-        {subtitulo}
-      </p>
-    </>
+    <article className="flex max-w-[260px] flex-col gap-2">
+      <div className="mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#7c3aed] text-[1.1rem] text-white">
+        {icone}
+      </div>
+      <h3 className="text-[0.95rem] font-bold text-[#1a1a2e]">{titulo}</h3>
+      <p className="text-[0.82rem] leading-[1.6] text-[#6b7280]">{descricao}</p>
+    </article>
   )
 }
 
-export default SectionTitle
+export default FeatureCard
