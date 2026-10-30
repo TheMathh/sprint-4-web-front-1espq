@@ -1,16 +1,69 @@
-# React + Vite
+# TechForge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page e área do estudante do **TechForge**, um app conceito que usa a câmera do celular e IA para transformar fotos de lousa, slides e documentos em material de estudo. Projeto da Sprint 4 (Front-end Design + Web Development), evolução da landing da Sprint 3.
 
-Currently, two official plugins are available:
+**Deploy (Vercel):** [(https://sprint-4-web-front-1espq.vercel.app/)]
+**Repositório:** [(https://github.com/TheMathh/sprint-4-web-front-1espq)]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias
 
-## React Compiler
+- React 19 + Vite
+- React Router (rotas públicas e privada)
+- Tailwind CSS
+- MockAPI com dados gerados pelo Faker.js
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como instalar as dependências
 
-## Expanding the ESLint configuration
+Requer Node.js 20 ou superior.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone [https://github.com/TheMathh/sprint-4-web-front-1espq]
+cd sprint-4-web-front-1espq
+npm install
+```
+
+## Como executar o projeto
+
+```bash
+npm run dev
+```
+
+Abra `http://localhost:5173`. Para gerar a versão de produção: `npm run build`.
+
+## Back-end
+
+O projeto não tem servidor próprio. Os dados vêm de uma API mockada hospedada no MockAPI (`src/services/api.js`), que não exige nenhuma configuração local.
+
+## Usuário e senha para teste
+
+| Usuário | Senha |
+|---|---|
+| aluno | techforge123 |
+
+O login é apenas demonstrativo: a verificação é feita no código, sem back-end. Ele libera a rota privada `/app` (Área do estudante), que lista os resumos vindos da API.
+
+## Rotas
+
+| Rota | Tipo | Descrição |
+|---|---|---|
+| `/` | Pública | Landing page |
+| `/login` | Pública | Tela de login |
+| `/app` | Privada | Área do estudante (redireciona para `/login` se não estiver logado) |
+
+## Estrutura
+
+- `src/components`: componentes da landing e da área do estudante
+- `src/pages`: Home, Login e Area
+- `src/context`: AuthContext e AuthProvider
+- `src/hooks`: hooks customizados `useAuth` e `useResumos`
+- `src/data`: conteúdos exibidos nos cards
+- `src/services`: endereço da API
+
+## Uso de Inteligência Artificial
+
+Utilizamos o Claude (Anthropic) como ferramenta de apoio durante o desenvolvimento do projeto. A ferramenta foi utilizada para auxiliar no planejamento da migração da landing page de HTML/CSS para React, divisão de tarefas, na conversão de estilos para Tailwind CSS, na estruturação e na elaboração do README. A equipe realizou adaptações e testes no projeto, sendo responsável pelas decisões de implementação, identidade visual, textos e solução proposta para o Challenge.
+
+## Equipe
+
+Mateus A. Borges, Arthur de Sá, Gustavo Bidin e Isadora Bradac.
