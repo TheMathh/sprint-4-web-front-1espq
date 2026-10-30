@@ -2,8 +2,8 @@
 
 Landing page e área do estudante do **TechForge**, um app conceito que usa a câmera do celular e IA para transformar fotos de lousa, slides e documentos em material de estudo. Projeto da Sprint 4 (Front-end Design + Web Development), evolução da landing da Sprint 3.
 
-**Deploy (Vercel):** [(https://sprint-4-web-front-1espq.vercel.app/)]
-**Repositório:** [(https://github.com/TheMathh/sprint-4-web-front-1espq)]
+- **Deploy (Vercel):** https://sprint-4-web-front-1espq.vercel.app/
+- **Repositório:** https://github.com/TheMathh/sprint-4-web-front-1espq
 
 ## Tecnologias
 
